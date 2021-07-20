@@ -1,0 +1,7 @@
+<h1>Digital garden journal entries</h1>
+
+<% @entries.each do |entry| %>
+  <%= link_to entry.title, entry_path(entry) %>
+<% end %>
+
+<%= link_to "New entry", new_entry_path %>
