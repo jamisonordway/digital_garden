@@ -6,7 +6,6 @@ RSpec.describe 'log entries index' do
 
     visit log_entries_path
 
-    expect(page).to have_content(log_entry.title)
-    expect(page).to have_content(log_entry.body)
+    expect(page).to have_link(log_entry.title)
   end
 end
